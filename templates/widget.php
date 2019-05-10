@@ -6,4 +6,4 @@
 
 <?php echo $args['after_widget']; ?>
 
-<?php // $x = // uncomment for syntax error.
+<?php // $x = // Uncomment for syntax error.

@@ -26,7 +26,8 @@ class ErrorWidget extends WP_Widget {
 	 */
 	public function widget( $args, $instance ) {
 
-		$api = new RemoteAPI( 'https://baconipsum.co/api/?type=meat-and-filler' );
+		// Change '.com' to '.co' to induce an exception!
+		$api = new RemoteAPI( 'https://baconipsum.com/api/?type=meat-and-filler' );
 
 		try {
 			$text = $api->get();
